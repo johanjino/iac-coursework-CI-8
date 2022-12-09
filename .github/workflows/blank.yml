@@ -9,10 +9,10 @@ jobs:
         runner: [ubuntu-20.04]
     runs-on: ${{ matrix.runner }}
     steps:
-      - name: Checkout iac-riscv-cw-8
+      - name: Checkout iac-coursework-CI-8
         uses: actions/checkout@v2
         with:
-          path: iac-riscv-cw-8
+          path: iac-coursework-CI-8
           persist-credentials: false
           submodules: "recursive"
           fetch-depth: 2
@@ -28,10 +28,10 @@ jobs:
   mac_os:
     runs-on: macos-12
     steps:
-      - name: Checkout iac-riscv-cw-8
+      - name: Checkout iac-coursework-CI-8
         uses: actions/checkout@v2
         with:
-          path: iac-riscv-cw-8
+          path: iac-coursework-CI-8
           persist-credentials: false
           submodules: "recursive"
           fetch-depth: 2
