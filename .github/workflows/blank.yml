@@ -20,6 +20,7 @@ jobs:
         run: bash <(curl -fsSL https://raw.githubusercontent.com/EIE2-IAC-Labs/Lab0-devtools/main/tools/install.sh)
       - name: Build and Run Simulation
         run: |
+          git clone https://github.com/EIE2-IAC-Labs/iac-riscv-cw-8
           chmod +x iac-riscv-cw-8/rtl/doit.sh
           cd iac-riscv-cw-8/rtl
           ./doit.sh
@@ -38,6 +39,7 @@ jobs:
         run: bash <(curl -fsSL https://raw.githubusercontent.com/EIE2-IAC-Labs/Lab0-devtools/main/tools/install.sh)
       - name: Build and Run Simulation
         run: |
+          git clone https://github.com/EIE2-IAC-Labs/iac-riscv-cw-8
           chmod +x iac-riscv-cw-8/rtl/doit.sh
           cd iac-riscv-cw-8/rtl
           ./doit.sh
